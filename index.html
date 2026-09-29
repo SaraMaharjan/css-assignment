@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Assignment - 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="responsive-title">CSS Fundamentals Showcase</h1>
+        <p class="subtitle">Exploring Selectors, Units, Colors, Typography, Text & Image Properties</p>
+    </header>
+
+    <main class="container">
+
+        <section id="selectors-section" class="card">
+            <h2>Task 1: CSS Selectors Demonstration</h2>
+            <article>
+                <p class="intro-text">This paragraph is inside an article (Descendant Selector test).</p>
+                <p>This is a direct paragraph child of article.</p>
+                <span>Span element inside article.</span>
+                <p>Adjacent sibling paragraph right after span!</p>
+                <p>General sibling paragraph following span.</p>
+                <a href="https://github.com" target="_blank" class="custom-btn">External Link (Attribute Selector)</a>
+            </article>
+        </section>
+
+        <section id="units-section" class="card">
+            <h2>Task 2: CSS Units Demonstration</h2>
+            <div class="responsive-box">
+                <p>This box width is 80% of container, height is 15vh, padding is 1.5em, border is 2px solid.</p>
+            </div>
+        </section>
+
+        <section id="colors-section" class="card">
+            <h2>Task 3: Color Formats Showcase</h2>
+            <div class="color-grid">
+                <div class="color-box named">Named Color (Red)</div>
+                <div class="color-box hex">HEX Color (#2563eb)</div>
+                <div class="color-box rgb">RGB Color (rgb(16, 185, 129))</div>
+                <div class="color-box rgba">RGBA Color (Alpha 0.3)</div>
+                <div class="color-box hsl">HSL Color (hsl(280, 80%, 60%))</div>
+                <div class="color-box hsla">HSLA Color (Alpha 0.5)</div>
+            </div>
+        </section>
+
+        <section id="typography-section" class="card">
+            <h2>Task 4: Typography Properties</h2>
+            <h3 class="custom-subheading">Professional Article Title</h3>
+            <p class="styled-paragraph">Typography shapes how reading feels. Using contrasting weights, styles, and optical stretch improves legibility across screens.</p>
+            <blockquote class="styled-quote">"CSS typography gives life and voice to structural HTML markup."</blockquote>
+            <ul class="font-list">
+                <li>Font Variant: Small-Caps</li>
+                <li>Font Stretch: Expanded</li>
+                <li>Font Style: Italic</li>
+            </ul>
+        </section>
+
+        <section id="text-section" class="card">
+            <h2>Task 5: CSS Text Showcase</h2>
+            <div class="text-demo t-shadow">Text Shadow & Letter Spacing</div>
+            <div class="text-demo t-transform">uppercase & word spacing test</div>
+            <div class="text-demo t-indent">This paragraph demonstrates text-indent on the first line. Notice how it pushes inward.</div>
+            <div class="text-demo t-decor">Custom Underline Style & Thickness</div>
+            <div class="text-demo t-break">Supercalifragilisticexpialidocious_Very_Long_Unbroken_String_To_Test_Word_Break_And_Overflow_Wrap</div>
+            <div class="text-demo t-align-last">This paragraph is fully justified, and text-align-last forces the very final line of this block to align to the center instead of default left.</div>
+        </section>
+
+        <section id="images-section" class="card">
+            <h2>Task 6: Image Styling & Object Fit</h2>
+            <div class="image-gallery">
+                <div class="img-container">
+                    <p>Rectangular + Border & Radius</p>
+                    <img src="nature.jfif" alt="Nature" class="img-rectangular">
+                </div>
+                <div class="img-container">
+                    <p>Circular Profile Image</p>
+                    <img src="portrait.avif" alt="Portrait" class="img-circular">
+                </div>
+                <div class="img-container">
+                    <p>Fixed Container (Object-Fit: Cover)</p>
+                    <img src="nature.jfif" alt="Cover" class="img-cover">
+                </div>
+                <div class="img-container">
+                    <p>Object-Fit: Contain</p>
+                    <img src="nature.jfif" alt="Contain" class="img-contain">
+                </div>
+                <div class="img-container">
+                    <p>Object-Fit: Fill</p>
+                    <img src="nature.jfif" alt="Fill" class="img-fill">
+                </div>
+            </div>
+        </section>
+        
+        <section id="profile-card-section">
+            <h2>Task 7: Mini Project - Profile Card</h2>
+            <div class="profile-card">
+                <div class="profile-img-wrapper">
+                    <img src="portrait.avif" alt="Sara Maharjan" class="profile-avatar">
+                </div>
+                <h3 class="profile-name">Sara Maharjan</h3>
+                <p class="profile-role">Software Engineering Student</p>
+                <p class="profile-desc">Passionate front-end developer building modern, accessible, and responsive user interfaces.</p>
+                
+                <div class="profile-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+
+                <div class="profile-links">
+                    <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+
+                <button class="contact-btn">Contact Me</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

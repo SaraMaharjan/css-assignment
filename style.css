@@ -1,0 +1,341 @@
+/* ==========================================================================
+   TASK 1: CSS SELECTORS
+   ========================================================================== */
+
+/* 1. Universal Selector: Resets global spacing and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Element Selector: Targets body HTML tag */
+body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    padding: 20px;
+}
+
+/* 3. Class Selector: Targets elements with class="card" */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. ID Selector: Targets specific section container */
+#selectors-section {
+    border-top: 4px solid #2563eb;
+}
+
+/* 5. Grouping Selector: Styles multiple heading levels together */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+/* 6. Descendant Selector: Targets any p tag inside article */
+article p {
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+/* 7. Child Selector: Targets direct p children of article */
+article > p {
+    font-weight: 500;
+}
+
+/* 8. Adjacent Sibling Selector: Targets p immediately following span */
+span + p {
+    color: #d97706;
+    font-style: italic;
+}
+
+/* 9. General Sibling Selector: Targets all p elements following span */
+span ~ p {
+    letter-spacing: 0.5px;
+}
+
+/* 10. Attribute Selector: Targets links with target="_blank" */
+a[target="_blank"] {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   TASK 2: CSS UNITS
+   ========================================================================== */
+
+.main-header {
+    height: 20vh; /* Viewport Height Unit */
+    text-align: center;
+}
+
+/* Responsive heading using Viewport Width (vw) */
+.responsive-title {
+    font-size: 3.5vw; 
+}
+
+.subtitle {
+    font-size: 1.2rem; /* REM Unit */
+}
+
+/* Challenge: Dynamic responsive box using % and em */
+.responsive-box {
+    width: 80%; /* Percentage Unit */
+    height: 15vh; /* Viewport Height */
+    padding: 1.5em; /* EM Unit */
+    border: 2px solid #0284c7; /* Pixel Unit */
+    background-color: #e0f2fe;
+    border-radius: 8px;
+}
+
+
+/* ==========================================================================
+   TASK 3: CSS COLORS
+   ========================================================================== */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.color-box {
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.color-box.named { background-color: crimson; } /* Color Name */
+.color-box.hex   { background-color: #2563eb; } /* HEX */
+.color-box.rgb   { background-color: rgb(16, 185, 129); } /* RGB */
+.color-box.rgba  { background-color: rgba(37, 99, 235, 0.3); color: #000; } /* RGBA Alpha */
+.color-box.hsl   { background-color: hsl(280, 80%, 60%); } /* HSL */
+.color-box.hsla  { background-color: hsla(280, 80%, 60%, 0.5); } /* HSLA */
+
+
+/* ==========================================================================
+   TASK 4: TYPOGRAPHY
+   ========================================================================== */
+
+.custom-subheading {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.styled-paragraph {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-stretch: expanded;
+}
+
+.styled-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #4b5563;
+    border-left: 4px solid #8b5cf6;
+    padding-left: 12px;
+    margin: 12px 0;
+}
+
+.font-list li {
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+   TASK 5: TEXT PROPERTIES
+   ========================================================================== */
+
+.text-demo {
+    margin-bottom: 14px;
+    padding: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.t-shadow {
+    color: #1e293b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+}
+
+.t-transform {
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+
+.t-indent {
+    text-indent: 40px;
+    line-height: 1.6;
+}
+
+.t-decor {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ef4444;
+    text-decoration-thickness: 3px;
+}
+
+.t-break {
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.t-align-last {
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+/* ==========================================================================
+   TASK 6: IMAGE PROPERTIES
+   ========================================================================== */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.img-container {
+    width: 200px;
+    text-align: center;
+}
+
+/* Image 1: Rectangular with border/radius */
+.img-rectangular {
+    width: 100%;
+    height: 120px;
+    border: 3px solid #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0.9;
+}
+
+/* Image 2: Circular Profile Image */
+.img-circular {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #10b981;
+}
+
+/* Image 3 Experiments: Object-fit options */
+.img-cover, .img-contain, .img-fill {
+    width: 180px;
+    height: 120px;
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+}
+
+.img-cover   { object-fit: cover; object-position: center; }
+.img-contain { object-fit: contain; }
+.img-fill    { object-fit: fill; }
+
+
+/* ==========================================================================
+   TASK 7: MINI PROJECT - PERSONAL PROFILE CARD
+   ========================================================================== */
+
+.profile-card {
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(226, 232, 240, 0.8); /* Colors: RGBA */
+}
+
+.profile-avatar {
+    width: 110px;               /* Image Unit: px */
+    height: 110px;
+    min-width: 100px;
+    max-width: 120px;
+    border-radius: 50%;         /* Image Unit: % */
+    object-fit: cover;          /* Image Property */
+    border: 4px solid #3b82f6;  /* Color: HEX */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-name {
+    font-size: 1.5rem;          /* Unit: rem */
+    font-weight: 700;           /* Typography Property */
+    color: #0f172a;
+    letter-spacing: 0.5px;      /* Text Property */
+    margin-top: 12px;
+}
+
+.profile-role {
+    font-style: italic;         /* Typography Property */
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.profile-desc {
+    line-height: 1.5;          /* Text Property */
+    color: #334155;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.profile-skills {
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: hsl(217, 91%, 95%); /* Color: HSL */
+    color: hsl(217, 91%, 45%);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 2px;
+}
+
+.profile-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 0.75em;            /* Unit: em */
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;   /* Text Property */
+    letter-spacing: 1px;        /* Text Property */
+}
